@@ -11,7 +11,7 @@ export function PlugCheckout() {
       sandbox
       publicKey="<YOUR_PUBLIC_KEY>"
       clientId="<YOUR_CLIENT_ID>"
-      merchantId="<YOUR_MERCHANT_ID"
+      merchantId="<YOUR_MERCHANT_ID>"
       paymentMethods={{
         pix: {
           expiresIn: 600,
@@ -41,7 +41,7 @@ export function PlugCheckout() {
         amount: 100,
         description: "",
         orderId: "",
-        customerId: "",
+        customerId: "<CUSTOMER_ID>",
         currency: "BRL",
         capture: false,
       }}
@@ -56,9 +56,11 @@ export function PlugCheckout() {
       }}
       onPaymentSuccess={(data) => {
         // Your specifications here
+        console.log(data);
       }}
       onPaymentFailed={(error) => {
         // Your specifications here
+        console.log(error);
       }}
     />
   );
