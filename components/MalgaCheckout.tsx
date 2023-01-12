@@ -1,13 +1,16 @@
 import Dynamic from "next/dynamic";
 
-const PlugCheckoutWebComponent = Dynamic(() => import("@plug-checkout/react"), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
-});
+const MalgaCheckoutWebComponent = Dynamic(
+  () => import("@malga-checkout/react"),
+  {
+    ssr: false,
+    loading: () => <p>Loading...</p>,
+  }
+);
 
-export function PlugCheckout() {
+export function MalgaCheckout() {
   return (
-    <PlugCheckoutWebComponent
+    <MalgaCheckoutWebComponent
       sandbox
       publicKey="<YOUR_PUBLIC_KEY>"
       clientId="<YOUR_CLIENT_ID>"
@@ -38,7 +41,7 @@ export function PlugCheckout() {
         },
       }}
       transactionConfig={{
-        statementDescriptor: "#1 Demonstration Plug Checkout",
+        statementDescriptor: "#1 Demonstration Malga Checkout",
         amount: 100,
         description: "",
         orderId: "",
@@ -51,9 +54,7 @@ export function PlugCheckout() {
         actionButtonLabel: "Continuar",
         errorActionButtonLabel: "Tentar novamente",
         successActionButtonLabel: "Continuar",
-        successRedirectUrl: "https://www.plugpagamentos.com/",
-        pixFilledProgressBarColor: "#344383",
-        pixEmptyProgressBarColor: "#D8DFF0",
+        successRedirectUrl: "https://www.malga.io/",
       }}
       onPaymentSuccess={(data) => {
         // Your specifications here

@@ -1,16 +1,16 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import { PlugCheckout } from "../components/PlugCheckout";
+import { MalgaCheckout } from "../components/MalgaCheckout";
 
 const Home: NextPage = () => {
   return (
     <main>
       <Head>
-        <title>Plug Checkout Demo</title>
-        <link rel="icon" href="/favicon.png" />
+        <title>Malga Checkout Demo</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
-      <PlugCheckout />
+      <MalgaCheckout />
     </main>
   );
 };

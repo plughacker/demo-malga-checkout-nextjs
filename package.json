@@ -1,5 +1,5 @@
 {
-  "name": "demo-plug-checkout-next",
+  "name": "demo-malga-checkout-next",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,7 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@plug-checkout/react": "latest",
+    "@malga-checkout/react": "latest",
     "next": "12.0.4",
     "react": "17.0.2",
     "react-dom": "17.0.2"
