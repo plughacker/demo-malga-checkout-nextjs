@@ -1,6 +1,6 @@
-# Demo malga Checkout NextJS
+# Demo Malga Checkout NextJS
 
-This project is a demo of malga Checkout running on NextJS
+This project is a demo of Malga Checkout running on NextJS
 
 ## Running App
 
